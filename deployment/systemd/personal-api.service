@@ -1,0 +1,17 @@
+[Unit]
+Description=Personal FastAPI Service
+After=network.target
+
+[Service]
+User=ubuntu
+WorkingDirectory=/home/ubuntu/production-api-deployment
+
+ExecStart=/home/ubuntu/production-api-deployment/venv/bin/uvicorn app.main:app --host 127.0.0.1 --port 8000
+
+Restart=always
+RestartSec=s
+
+Environment="PATH=/home/ubuntu/production-api-deployment/venv/bin"
+
+[Install]
+WantedBy=multi-user.target
