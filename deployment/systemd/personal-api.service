@@ -9,7 +9,7 @@ WorkingDirectory=/home/ubuntu/production-api-deployment
 ExecStart=/home/ubuntu/production-api-deployment/venv/bin/uvicorn app.main:app --host 127.0.0.1 --port 8000
 
 Restart=always
-RestartSec=s
+RestartSec=5
 
 Environment="PATH=/home/ubuntu/production-api-deployment/venv/bin"
 
