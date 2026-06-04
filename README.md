@@ -467,4 +467,4 @@ One of the most valuable lessons from this project was learning that successful 
 
 GitHub: https://github.com/davefilani-dev
 
-Email: your-ooluwaseunfilani@gmail.com
+Email: ooluwaseunfilani@gmail.com
